@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu images.png">
+	<!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="awards0000" x="0" y="0" width="670" height="671"/>
+	<SubTexture name="credits0000" x="670" y="0" width="670" height="671"/>
+	<SubTexture name="freeplay0000" x="1340" y="0" width="670" height="671"/>
+	<SubTexture name="options0000" x="0" y="671" width="670" height="671"/>
+	<SubTexture name="story_mode0000" x="670" y="671" width="670" height="671"/>
+</TextureAtlas>

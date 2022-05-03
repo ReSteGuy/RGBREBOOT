@@ -46,6 +46,8 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
+	
+	var poster:FlxSprite;
 
 	override function create()
 	{
@@ -115,7 +117,6 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
-			//menuItem.screenCenter(X);
 			menuItem.x += 90;
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
@@ -140,6 +141,18 @@ class MainMenuState extends MusicBeatState
 		// NG.core.calls.event.logEvent('swag').send();
 
 		changeItem();
+		
+		poster = new FlxSprite(480, -50);
+		poster.scale.set(0.8, 0.8);
+		poster.updateHitbox();
+		poster.antialiasing = ClientPrefs.globalAntialiasing;
+		poster.frames = Paths.getSparrowAtlas('menu images');
+		//poster.animation.addByPrefix('awards', 'awards', 0);
+		poster.animation.addByPrefix('credits', 'credits', 0);
+		poster.animation.addByPrefix('freeplay', 'freeplay', 0);
+		poster.animation.addByPrefix('options', 'options', 0);
+		poster.animation.addByPrefix('story_mode', 'story_mode', 0);
+		add(poster);
 
 		#if ACHIEVEMENTS_ALLOWED
 		Achievements.loadAchievements();
@@ -170,6 +183,8 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		poster.animation.play(optionShit[curSelected]);
+		
 		if (FlxG.sound.music.volume < 0.8)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -265,7 +280,7 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			spr.screenCenter(X);
+		
 		});
 	}
 

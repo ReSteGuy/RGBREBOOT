@@ -35,10 +35,8 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		'awards',
 		'credits',
-		#if !switch 'donate', #end
 		'options'
 	];
 
@@ -143,11 +141,12 @@ class MainMenuState extends MusicBeatState
 		changeItem();
 		
 		poster = new FlxSprite(480, -50);
+		poster.scrollFactor.set();
 		poster.scale.set(0.8, 0.8);
 		poster.updateHitbox();
 		poster.antialiasing = ClientPrefs.globalAntialiasing;
 		poster.frames = Paths.getSparrowAtlas('menu images');
-		//poster.animation.addByPrefix('awards', 'awards', 0);
+		poster.animation.addByPrefix('awards', 'awards', 0);
 		poster.animation.addByPrefix('credits', 'credits', 0);
 		poster.animation.addByPrefix('freeplay', 'freeplay', 0);
 		poster.animation.addByPrefix('options', 'options', 0);

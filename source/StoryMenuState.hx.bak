@@ -282,7 +282,8 @@ class StoryMenuState extends MusicBeatState
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmWeek'));
-				FlxTween.tween(FlxG.camera, {zoom: 3.0}, 1.0, {ease: FlxEase.quadInOut});
+				FlxTween.tween(FlxG.camera, {zoom: 10.0}, 1.0, {ease: FlxEase.quadInOut});
+				FlxTween.angle(FlxG.camera, 0, 360, 1.0, {ease: FlxEase.quadInOut});
 
 				grpWeekText.members[curWeek].startFlashing();
 

@@ -140,7 +140,7 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 		
-		poster = new FlxSprite(480, -50);
+		poster = new FlxSprite(600, -100);
 		poster.scrollFactor.set();
 		poster.scale.set(0.8, 0.8);
 		poster.updateHitbox();

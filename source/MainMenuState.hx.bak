@@ -141,6 +141,7 @@ class MainMenuState extends MusicBeatState
 		changeItem();
 		
 		poster = new FlxSprite(480, -50);
+		poster.scrollFactor.set();
 		poster.scale.set(0.8, 0.8);
 		poster.updateHitbox();
 		poster.antialiasing = ClientPrefs.globalAntialiasing;

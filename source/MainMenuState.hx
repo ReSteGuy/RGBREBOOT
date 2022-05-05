@@ -45,6 +45,7 @@ class MainMenuState extends MusicBeatState
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
 	
+	var backcover:FlxSprite;
 	var poster:FlxSprite;
 
 	override function create()
@@ -93,6 +94,13 @@ class MainMenuState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		magenta.color = 0xFFfd719b;
 		add(magenta);
+		
+		backcover = new FlxSprite(-80).loadGraphic(Paths.image('menu_side'));
+		backcover.scrollFactor.set(0, yScroll);
+		backcover.setGraphicSize(Std.int(backcover.width * 1.175));
+		backcover.updateHitbox();
+		backcover.screenCenter();
+		add(backcover);
 		
 		// magenta.scrollFactor.set();
 
@@ -224,6 +232,7 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
+					FlxTween.tween(FlxG.camera, {zoom: -1.0}, 2.0, {ease: FlxEase.quadinOut});
 
 					if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 

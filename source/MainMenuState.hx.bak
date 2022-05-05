@@ -45,6 +45,7 @@ class MainMenuState extends MusicBeatState
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
 	
+	var backcover:FlxSprite;
 	var poster:FlxSprite;
 
 	override function create()
@@ -94,6 +95,13 @@ class MainMenuState extends MusicBeatState
 		magenta.color = 0xFFfd719b;
 		add(magenta);
 		
+		backcover = new FlxSprite(-80).loadGraphic(Paths.image('menu_side'));
+		backcover.scrollFactor.set(0, yScroll);
+		backcover.setGraphicSize(Std.int(backcover.width * 1.175));
+		backcover.updateHitbox();
+		backcover.screenCenter();
+		add(backcover);
+		
 		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
@@ -140,9 +148,10 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 		
-		poster = new FlxSprite(480, -50);
+		poster = new FlxSprite(600, -100);
 		poster.scrollFactor.set();
 		poster.scale.set(0.8, 0.8);
+		poster.screenCenter(Y);
 		poster.updateHitbox();
 		poster.antialiasing = ClientPrefs.globalAntialiasing;
 		poster.frames = Paths.getSparrowAtlas('menu images');

@@ -232,7 +232,7 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
-					FlxTween.tween(FlxG.camera, {zoom: -1.0}, 2.0, {ease: FlxEase.quadinOut});
+					FlxTween.tween(FlxG.camera, {zoom: -1.0}, 2.0, {ease: FlxEase.quadInOut});
 
 					if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 

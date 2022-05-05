@@ -447,7 +447,7 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					FlxTween.tween(FlxG.camera, {zoom: -3.0}, 1.0, {ease: FlxEase.quadinOut});
+					FlxTween.tween(FlxG.camera, {zoom: -3.0}, 1.0, {ease: FlxEase.quadInOut});
 					if (mustUpdate) {
 						MusicBeatState.switchState(new OutdatedState());
 					} else {

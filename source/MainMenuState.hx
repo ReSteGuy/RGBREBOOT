@@ -148,10 +148,9 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 		
-		poster = new FlxSprite(600, -100);
+		poster = new FlxSprite(600, 0);
 		poster.scrollFactor.set();
 		poster.scale.set(0.8, 0.8);
-		poster.screenCenter(Y);
 		poster.updateHitbox();
 		poster.antialiasing = ClientPrefs.globalAntialiasing;
 		poster.frames = Paths.getSparrowAtlas('menu images');
@@ -232,7 +231,7 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
-					FlxTween.tween(FlxG.camera, {zoom: -1.0}, 2.0, {ease: FlxEase.quadInOut});
+					FlxTween.tween(FlxG.camera, {zoom: 4.0}, 1.0, {ease: FlxEase.quadInOut});
 
 					if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 

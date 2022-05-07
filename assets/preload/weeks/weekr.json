@@ -1,4 +1,16 @@
 {
+	"storyName": "GOD FUNKIN ACE!",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "rsguy",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
 	"songs": [
 		[
 			"Ace Card",
@@ -19,7 +31,7 @@
 			]
 		],
 		[
-			"Take",
+			"Takeover",
 			"dad",
 			[
 				146,
@@ -28,23 +40,11 @@
 			]
 		]
 	],
-	"hiddenUntilUnlocked": false,
-	"hideFreeplay": false,
-	"weekBackground": "rsguy",
-	"difficulties": "Normal",
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
-	"storyName": "GOD FUNKIN ACE!",
-	"weekName": "Custom",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": false,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"hiddenUntilUnlocked": false,
+	"weekName": "Custom"
 }

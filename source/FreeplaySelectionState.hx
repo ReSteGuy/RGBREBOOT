@@ -35,9 +35,7 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		'awards',
-		'credits',
-		'options'
+		'all'
 	];
 
 	var magenta:FlxSprite;
@@ -95,13 +93,6 @@ class MainMenuState extends MusicBeatState
 		magenta.color = 0xFFfd719b;
 		add(magenta);
 		
-		backcover = new FlxSprite(-80).loadGraphic(Paths.image('menu_side'));
-		backcover.scrollFactor.set(0, yScroll);
-		backcover.setGraphicSize(Std.int(backcover.width * 1.175));
-		backcover.updateHitbox();
-		backcover.screenCenter();
-		add(backcover);
-		
 		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
@@ -114,11 +105,11 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
+			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 100;
 			var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
-			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
+			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i] + "_songs");
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
@@ -147,19 +138,6 @@ class MainMenuState extends MusicBeatState
 		// NG.core.calls.event.logEvent('swag').send();
 
 		changeItem();
-		
-		poster = new FlxSprite(600, 0);
-		poster.scrollFactor.set();
-		poster.scale.set(0.8, 0.8);
-		poster.updateHitbox();
-		poster.antialiasing = ClientPrefs.globalAntialiasing;
-		poster.frames = Paths.getSparrowAtlas('menu images');
-		poster.animation.addByPrefix('awards', 'awards', 0);
-		poster.animation.addByPrefix('credits', 'credits', 0);
-		poster.animation.addByPrefix('freeplay', 'freeplay', 0);
-		poster.animation.addByPrefix('options', 'options', 0);
-		poster.animation.addByPrefix('story_mode', 'story_mode', 0);
-		add(poster);
 
 		#if ACHIEVEMENTS_ALLOWED
 		Achievements.loadAchievements();
@@ -256,19 +234,11 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode':
-										MusicBeatState.switchState(new StoryMenuState());
+										MusicBeatState.switchState(new FreeplayStoryState());
 									case 'freeplay':
-										MusicBeatState.switchState(new FreeplaySelectionState());
-									#if MODS_ALLOWED
-									case 'mods':
-										MusicBeatState.switchState(new ModsMenuState());
-									#end
-									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
-									case 'credits':
-										MusicBeatState.switchState(new CreditsState());
-									case 'options':
-										LoadingState.loadAndSwitchState(new options.OptionsState());
+										MusicBeatState.switchState(new FreeplayFreeState());
+									case 'all':
+										MusicBeatState.switchState(new FreeplayState());
 								}
 							});
 						}

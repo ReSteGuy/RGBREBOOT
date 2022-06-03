@@ -1,78 +1,78 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				-174,
-				-50
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-90,
+				-111
+			],
 			"anim": "idle",
-			"indices": [],
-			"name": "Idle"
-		},
-		{
-			"offsets": [
-				-170,
-				-60
-			],
-			"loop": false,
 			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				140,
+				-110
+			],
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Left"
+			"fps": 24,
+			"name": "left",
+			"indices": []
 		},
 		{
 			"offsets": [
-				-183,
-				-84
+				-90,
+				-131
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Down"
+			"loop": false,
+			"name": "down"
 		},
 		{
 			"offsets": [
-				-180,
+				-100,
 				-70
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Up"
+			"loop": false,
+			"name": "up"
 		},
 		{
 			"offsets": [
-				-230,
-				-60
+				110,
+				-110
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Right"
+			"loop": false,
+			"name": "right"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/rsguyredone",
+	"image": "characters/rsguy",
 	"position": [
 		0,
 		0
 	],
-	"healthicon": "rsg",
-	"flip_x": true,
+	"healthicon": "rsguy",
+	"flip_x": false,
 	"healthbar_colors": [
-		153,
-		0,
-		0
+		161,
+		161,
+		161
 	],
 	"camera_position": [
-		0,
-		80
+		-210,
+		0
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 1.6
 }

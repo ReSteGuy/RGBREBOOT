@@ -115,6 +115,8 @@ class PlayState extends MusicBeatState
 	public static var isPixelStage:Bool = false;
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
+	public static var isStoryFree:Bool = false;
+	public static var isFreeplayFree:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
@@ -3284,7 +3286,14 @@ class PlayState extends MusicBeatState
 				if(FlxTransitionableState.skipNextTransIn) {
 					CustomFadeTransition.nextCamera = null;
 				}
-				MusicBeatState.switchState(new FreeplayState());
+				if (isFreeplayFree)
+				{
+					MusicBeatState.switchState(new FreeplayFreeState());
+				} else if (isStoryFree) {
+					MusicBeatState.switchState(new FreeplayFreeState());
+				} else {
+					MusicBeatState.switchState(new FreeplayState());
+				}
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 				changedDifficulty = false;
 			}

@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="menu_all_songs.png">
-	<!-- Created with Adobe Animate version 18.0.1.115 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="all basic0000" x="0" y="0" width="274" height="140"/>
-	<SubTexture name="all white0000" x="0" y="140" width="296" height="152"/>
-</TextureAtlas>

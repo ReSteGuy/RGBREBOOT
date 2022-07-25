@@ -1651,8 +1651,6 @@ class PlayState extends MusicBeatState
 						});
 						FlxG.sound.play(Paths.sound('introGo' + introSoundsSuffix), 0.6);
 						gf.playAnim('cheer', true);
-						gf.specialAnim = true;
-						gf.heyTimer = time;
 					case 4:
 				}
 

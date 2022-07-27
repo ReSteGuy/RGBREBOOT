@@ -3,8 +3,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-80,
-				-30
+				-34,
+				-200
 			],
 			"anim": "idle",
 			"fps": 24,
@@ -14,8 +14,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-53,
-				-30
+				6,
+				-197
 			],
 			"anim": "singLEFT",
 			"fps": 24,
@@ -26,7 +26,7 @@
 			"loop": false,
 			"offsets": [
 				-34,
-				-49
+				-197
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -36,8 +36,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				-10
+				-52,
+				-179
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -47,8 +47,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-127,
-				-32
+				-91,
+				-197
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -57,7 +57,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/monsterrsguy",
+	"image": "characters/pixelrsguy",
 	"position": [
 		0,
 		0
@@ -70,9 +70,9 @@
 		102
 	],
 	"camera_position": [
-		0,
-		0
+		-130,
+		270
 	],
-	"sing_duration": 6.1,
-	"scale": 1.6
+	"sing_duration": 6.2,
+	"scale": 0.9
 }

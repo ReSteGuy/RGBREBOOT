@@ -1,0 +1,39 @@
+{
+	"song": {
+		"speed": 2.6,
+		"stage": "stage",
+		"player1": "bf",
+		"player2": "rsguymon",
+		"player3": null,
+		"events": [
+			[
+				145920,
+				[
+					[
+						"Change Character",
+						"2",
+						"gf-pixel-normal"
+					],
+					[
+						"Change Character",
+						"0",
+						"pixel-bf-opponent"
+					],
+					[
+						"Change Character",
+						"1",
+						"rsguypixel"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 250,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Takeover"
+	}
+}

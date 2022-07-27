@@ -3,48 +3,48 @@
 	"difficulties": "Normal",
 	"hideFreeplay": false,
 	"weekBackground": "rsguy",
-	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"weekBefore": "tutorial",
 	"startUnlocked": true,
-	"hideStoryMode": false,
-	"songs": [
-		[
-			"Ace Card",
-			"dad",
-			[
-				146,
-				113,
-				253
-			]
-		],
-		[
-			"Vexlation",
-			"dad",
-			[
-				146,
-				113,
-				253
-			]
-		],
-		[
-			"Takeover",
-			"dad",
-			[
-				146,
-				113,
-				253
-			]
-		]
-	],
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
-	"hiddenUntilUnlocked": false,
-	"weekName": "Custom"
+	"songs": [
+		[
+			"Ace Card",
+			"rsguy",
+			[
+				255,
+				0,
+				0
+			]
+		],
+		[
+			"Vexlation",
+			"rsguy",
+			[
+				155,
+				0,
+				0
+			]
+		],
+		[
+			"Takeover",
+			"rsguymon",
+			[
+				40,
+				40,
+				40
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Custom",
+	"hiddenUntilUnlocked": false
 }

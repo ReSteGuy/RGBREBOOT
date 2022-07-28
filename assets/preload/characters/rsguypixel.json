@@ -3,8 +3,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-34,
-				-200
+				-38,
+				-197
 			],
 			"anim": "idle",
 			"fps": 24,
@@ -59,20 +59,20 @@
 	"no_antialiasing": false,
 	"image": "characters/pixelrsguy",
 	"position": [
-		0,
-		0
+		10,
+		-120
 	],
-	"healthicon": "rsguymon",
+	"healthicon": "pixelrsguy",
 	"flip_x": false,
 	"healthbar_colors": [
-		102,
-		102,
-		102
+		132,
+		126,
+		135
 	],
 	"camera_position": [
-		-130,
-		270
+		-240,
+		120
 	],
 	"sing_duration": 6.2,
-	"scale": 0.9
+	"scale": 1.4
 }

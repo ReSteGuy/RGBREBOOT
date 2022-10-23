@@ -1,7 +1,7 @@
 {
 	"song": {
 		"speed": 2.6,
-		"stage": "stage",
+		"stage": "YOU CANT FIND ME!!",
 		"player1": "bf",
 		"player2": "rsguymon",
 		"player3": null,
@@ -23,6 +23,16 @@
 						"Change Character",
 						"1",
 						"rsguypixel"
+					]
+				]
+			],
+			[
+				224640,
+				[
+					[
+						"win",
+						"",
+						""
 					]
 				]
 			]

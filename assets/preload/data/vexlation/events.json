@@ -1,0 +1,49 @@
+{
+	"song": {
+		"speed": 3.1,
+		"stage": "philly",
+		"player1": "bf",
+		"player2": "rsguy",
+		"player3": null,
+		"events": [
+			[
+				120000,
+				[
+					[
+						"Play Animation",
+						"transform",
+						"0"
+					]
+				]
+			],
+			[
+				123900,
+				[
+					[
+						"Play Animation",
+						"scream",
+						"0"
+					]
+				]
+			],
+			[
+				124800,
+				[
+					[
+						"Change Character",
+						"1",
+						"rsguymon"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 200,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Vexlation"
+	}
+}

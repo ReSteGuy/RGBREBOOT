@@ -1,0 +1,29 @@
+{
+	"song": {
+		"speed": 2.2,
+		"stage": "philly",
+		"player1": "kit",
+		"player2": "rsguy",
+		"player3": null,
+		"events": [
+			[
+				95384.6153846151,
+				[
+					[
+						"win",
+						"",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 312,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Ace Card"
+	}
+}

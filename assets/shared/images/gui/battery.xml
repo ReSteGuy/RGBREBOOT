@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="battery.png">
+	<!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fine0000" x="10" y="10" width="312" height="180"/>
+	<SubTexture name="fine0001" x="332" y="10" width="312" height="180"/>
+	<SubTexture name="fine0002" x="654" y="10" width="312" height="180"/>
+	<SubTexture name="fine0003" x="10" y="200" width="312" height="180"/>
+	<SubTexture name="low0000" x="332" y="200" width="312" height="180"/>
+	<SubTexture name="low0001" x="654" y="200" width="312" height="180"/>
+	<SubTexture name="low0002" x="10" y="390" width="312" height="180"/>
+	<SubTexture name="low0003" x="332" y="390" width="312" height="180"/>
+	<SubTexture name="max0000" x="654" y="390" width="312" height="180"/>
+	<SubTexture name="max0001" x="10" y="580" width="312" height="180"/>
+	<SubTexture name="max0002" x="332" y="580" width="312" height="180"/>
+	<SubTexture name="max0003" x="654" y="580" width="312" height="180"/>
+</TextureAtlas>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rsguy.png">
+	<!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="talk0000" x="10" y="10" width="284" height="487"/>
+	<SubTexture name="loop0000" x="598" y="10" width="284" height="487" frameX="-15" frameY="-20" frameWidth="319" frameHeight="513"/>
+	<SubTexture name="loop0001" x="10" y="507" width="284" height="487" frameX="-15" frameY="-20" frameWidth="319" frameHeight="513"/>
+	<SubTexture name="loop0002" x="304" y="507" width="251" height="513" frameX="-29" frameY="0" frameWidth="319" frameHeight="513"/>
+	<SubTexture name="loop0003" x="565" y="507" width="255" height="505" frameX="-27" frameY="-6" frameWidth="319" frameHeight="513"/>
+	<SubTexture name="loop0004" x="10" y="1030" width="284" height="487" frameX="-15" frameY="-20" frameWidth="319" frameHeight="513"/>
+	<SubTexture name="loop0005" x="304" y="1030" width="284" height="487" frameX="-15" frameY="-20" frameWidth="319" frameHeight="513"/>
+	<SubTexture name="loop0006" x="598" y="1030" width="319" height="450" frameX="0" frameY="-49" frameWidth="319" frameHeight="513"/>
+</TextureAtlas>

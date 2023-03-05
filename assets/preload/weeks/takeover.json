@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"Takeover",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": true,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "Normal",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "OVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVEROVER",
+	"weekName": "TAKEOVER",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "weekr",
+	"startUnlocked": false
+}

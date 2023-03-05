@@ -1,4 +1,16 @@
 {
+	"storyName": "frick u",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
 	"songs": [
 		[
 			"maroon",
@@ -17,25 +29,22 @@
 				113,
 				253
 			]
+		],
+		[
+			"dementia",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
 		]
 	],
-	"hiddenUntilUnlocked": false,
-	"hideFreeplay": false,
-	"weekBackground": "",
-	"difficulties": "Normal",
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
-	"storyName": "frick u",
-	"weekName": "Bonus!",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": true,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"hiddenUntilUnlocked": false,
+	"weekName": "Bonus!"
 }

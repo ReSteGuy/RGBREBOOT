@@ -1,6 +1,6 @@
 {
 	"storyName": "GOD FUNKIN ACE!",
-	"difficulties": "Normal",
+	"difficulties": "Normal, Encore",
 	"hideFreeplay": false,
 	"weekBackground": "rsguy",
 	"freeplayColor": [
@@ -32,15 +32,6 @@
 				155,
 				0,
 				0
-			]
-		],
-		[
-			"Takeover",
-			"rsguymon",
-			[
-				40,
-				40,
-				40
 			]
 		]
 	],
